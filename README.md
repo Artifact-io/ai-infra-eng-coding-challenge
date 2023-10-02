@@ -4,7 +4,7 @@
 
 ### 1.1. Containerizing the model
 
-In [part_1/1.1_containerize](part_1/1.1_containerize) you will need to implement an inference service in `main.py` serve the model over HTTP. You will also need to implement the `Dockerfile` to containerize the model and service to be built by `build.sh`.
+In [part_1/1.1_containerize](part_1/1.1_containerize) you will need to implement an inference service in `main.py` serve a pre-trained model over HTTP. You will also need to implement the `Dockerfile` to containerize the model and service to be built by `build.sh`.
 
 You may use any framework(s) you like to serve the model.
 
