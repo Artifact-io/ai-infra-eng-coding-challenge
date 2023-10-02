@@ -21,11 +21,10 @@ class Instance(BaseModel):
 
 def get_predictions(instances: List[Instance]) -> List[str]:
 	instances = [ f"{instance.context}\n{instance.question}\n\n" for instance in instances ]
-	inputs = tokenizer(instances, return_tensors="pt").input_ids.to(device)
-	outputs = model.generate(inputs, max_new_tokens=200, do_sample=True, top_k=50, top_p=0.95)
+	inputs = tokenizer(instances, return_tensors="pt").to(device)
+	outputs = model.generate(**inputs, max_new_tokens=200, do_sample=True, top_k=50, top_p=0.95)
 
-	predictions = tokenizer.batch_decode(outputs[:, inputs.shape[1]:], skip_special_tokens=True)
-
+	predictions = tokenizer.batch_decode(outputs[:, inputs.input_ids.shape[1]:], skip_special_tokens=True)
 	predictions = [ p.split("---")[0].strip() for p in predictions ]
 
 	return predictions
