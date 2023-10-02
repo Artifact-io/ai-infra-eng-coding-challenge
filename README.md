@@ -1,4 +1,4 @@
-# Artifact AI Infrastructure Challenge
+# Artifact AI Infrastructure Engineer Coding Challenge
 
 ## Part 1: Deploying a pre-trained model
 
