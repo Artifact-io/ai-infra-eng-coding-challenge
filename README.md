@@ -6,7 +6,10 @@
 
 In [part_1/1.1_containerize](part_1/1.1_containerize) you will need to implement an inference service in `main.py` serve a pre-trained model over HTTP. You will also need to implement the `Dockerfile` to containerize the model and service.
 
-You may use any framework(s) you like to serve the model.
+You may use any framework(s) you like to serve the model such as:
+* Flask
+* FastAPI
+* Kserve InferenceService
 
 
 Requirements:
