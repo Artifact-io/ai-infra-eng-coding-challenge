@@ -4,7 +4,7 @@
 
 ### 1.1. Containerizing the model
 
-In [part_1/1.1_containerize](part_1/1.1_containerize) you will need to implement an inference service in `main.py` serve a pre-trained model over HTTP. You will also need to implement the `Dockerfile` to containerize the model and service.
+In [part_1/1.1_containerize](part_1/1.1_containerize) you will need to implement an inference service in `main.py` serve the `Artifact-io/toy-sql-28M` pre-trained model over HTTP. You will also need to implement the `Dockerfile` to containerize the model and service.
 
 You may use any framework(s) you like to serve the model such as:
 * Flask
